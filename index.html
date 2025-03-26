@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book Library</h1>
+    </header>
+    <div class="controls">
+        <input id="search" type="text" placeholder="Search books...">
+        <select id="sort">
+            <option value="">Sort By</option>
+            <option value="title">Title</option>
+            <option value="date">Date</option>
+        </select>
+        <div class="view-toggle">
+            <button id="grid-view">Grid</button>
+            <button id="list-view">List</button>
+        </div>
+    </div>
+    <div id="books-container"></div>
+    <div id="pagination">
+        <button id="prev">Previous</button>
+        <span id="page-num">1</span>
+        <button id="next">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
